@@ -15,7 +15,7 @@ namespace TodoModule
       
       if (todo != null)
       {
-        todo.status = status;
+        todo.Status = status;
         await SaveChangesAsync();
       }
 
