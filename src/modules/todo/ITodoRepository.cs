@@ -2,9 +2,9 @@ namespace TodoModule
 {
   interface ITodoRepository
   {
-    Todo? Save();
-    Todo? GetById(string id);
-    Todo? DeleteById(string id);
-    Todo? ChangeStatusById(string id, TodoStatus status);
+    Task<Todo?> Save(Todo todo);
+    Task<Todo?> GetById(string id);
+    Task<Todo?> DeleteById(string id);
+    Task<Todo?> ChangeStatusById(string id, TodoStatus status);
   }
 }
