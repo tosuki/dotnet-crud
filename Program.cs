@@ -1,6 +1,5 @@
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+using ApplicationHttpServer;
 
-app.MapGet("/", () => "Hello World!");
+var server = new ApplicationServer(new ApplicationOptions());
 
-app.Run();
+server.StartServer();
