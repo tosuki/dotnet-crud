@@ -9,7 +9,7 @@ namespace TodoModule
       this.todoRepository = todoRepository;
     }
   
-    public async Task<Todo?> Create(string title, string description)
+    public async Task<Todo> Create(string title, string description)
     {
       Todo todo = new Todo
       {
