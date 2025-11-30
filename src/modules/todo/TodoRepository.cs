@@ -46,5 +46,10 @@ namespace TodoModule
       await SaveChangesAsync();
       return todo;
     }
+
+    public async Task<List<Todo>> GetAll()
+    {
+      return await Todos.ToListAsync();
+    }
   }
 }

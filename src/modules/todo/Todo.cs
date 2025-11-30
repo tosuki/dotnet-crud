@@ -5,6 +5,6 @@ namespace TodoModule
     public string? id {get; set;}
     public string? Title {get; set;}
     public string? Description {get; set;}
-    public TodoStatus status { get; set; } = TodoStatus.Pending;
+    public TodoStatus Status { get; set; } = TodoStatus.Pending;
   }
 }
